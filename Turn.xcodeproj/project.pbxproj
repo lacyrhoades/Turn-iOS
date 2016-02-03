@@ -12,6 +12,9 @@
 		0F1CD3311C62B3E700A2FEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1CD32F1C62B3E700A2FEF0 /* Main.storyboard */; };
 		0F1CD3331C62B3E700A2FEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1CD3321C62B3E700A2FEF0 /* Assets.xcassets */; };
 		0F1CD3361C62B3E700A2FEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1CD3341C62B3E700A2FEF0 /* LaunchScreen.storyboard */; };
+		0F43CF291C62B60600219B91 /* MixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43CF281C62B60600219B91 /* MixViewController.swift */; };
+		0F43CF2B1C62BE8100219B91 /* MixCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43CF2A1C62BE8100219B91 /* MixCollectionDataSource.swift */; };
+		0F43CF2D1C62BE9900219B91 /* MixCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43CF2C1C62BE9900219B91 /* MixCollectionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0F1CD3321C62B3E700A2FEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F1CD3351C62B3E700A2FEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F1CD3371C62B3E700A2FEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F43CF281C62B60600219B91 /* MixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixViewController.swift; path = MixVC/MixViewController.swift; sourceTree = "<group>"; };
+		0F43CF2A1C62BE8100219B91 /* MixCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixCollectionDataSource.swift; path = MixVC/MixCollectionDataSource.swift; sourceTree = "<group>"; };
+		0F43CF2C1C62BE9900219B91 /* MixCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixCollectionDelegate.swift; path = MixVC/MixCollectionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		0F1CD32A1C62B3E700A2FEF0 /* Turn */ = {
 			isa = PBXGroup;
 			children = (
+				0F1CD33D1C62B51100A2FEF0 /* MixVC */,
 				0F1CD32B1C62B3E700A2FEF0 /* AppDelegate.swift */,
 				0F1CD32D1C62B3E700A2FEF0 /* ViewController.swift */,
 				0F1CD32F1C62B3E700A2FEF0 /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				0F1CD3371C62B3E700A2FEF0 /* Info.plist */,
 			);
 			path = Turn;
+			sourceTree = "<group>";
+		};
+		0F1CD33D1C62B51100A2FEF0 /* MixVC */ = {
+			isa = PBXGroup;
+			children = (
+				0F43CF281C62B60600219B91 /* MixViewController.swift */,
+				0F43CF2A1C62BE8100219B91 /* MixCollectionDataSource.swift */,
+				0F43CF2C1C62BE9900219B91 /* MixCollectionDelegate.swift */,
+			);
+			name = MixVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F43CF291C62B60600219B91 /* MixViewController.swift in Sources */,
+				0F43CF2B1C62BE8100219B91 /* MixCollectionDataSource.swift in Sources */,
 				0F1CD32E1C62B3E700A2FEF0 /* ViewController.swift in Sources */,
+				0F43CF2D1C62BE9900219B91 /* MixCollectionDelegate.swift in Sources */,
 				0F1CD32C1C62B3E700A2FEF0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +306,7 @@
 				0F1CD33C1C62B3E700A2FEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
